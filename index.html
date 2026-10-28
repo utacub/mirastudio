@@ -4205,8 +4205,10 @@ function chooseCover(it){ST.coverI=it.id;ST.grid.sel=it.id;SFX.select();ST.lock=
 /* portada de revista */
 function drawCover(g,t,x,y,w,h,ph,o={}){g.save();g.fillStyle='rgba(60,40,80,.22)';g.fillRect(x+10,y+14,w,h);g.fillStyle='#ffffff';g.fillRect(x,y,w,h);
   g.drawImage(ph.img,x,y,w,h);
-  const mast=tr('brand');let fs=h*.165;g.font=`800 ${fs}px ${FD}`;const mw=g.measureText(mast).width;if(mw>w*.9)fs*=w*.9/mw;
-  txt(g,mast,x+w/2+4,y+h*.1+5,{size:fs,w:800,col:'rgba(31,26,46,.25)'});txt(g,mast,x+w/2,y+h*.1,{size:fs,w:800,col:o.mcol||'#ff3d6e'});
+  /* capçalera: logotip */const LG=document.querySelector('.brand-logo');if(LG&&LG.complete&&LG.naturalWidth){const lw=w*.9,lh=lw*LG.naturalHeight/LG.naturalWidth;
+    g.save();g.shadowColor='rgba(255,255,255,.9)';g.shadowBlur=w*.035;g.drawImage(LG,x+(w-lw)/2,y+h*.025,lw,lh);g.shadowBlur=w*.012;g.drawImage(LG,x+(w-lw)/2,y+h*.025,lw,lh);g.restore()}
+  else{const mast=tr('brand');let fs=h*.165;g.font=`800 ${fs}px ${FD}`;const mw=g.measureText(mast).width;if(mw>w*.9)fs*=w*.9/mw;
+  txt(g,mast,x+w/2+4,y+h*.1+5,{size:fs,w:800,col:'rgba(31,26,46,.25)'});txt(g,mast,x+w/2,y+h*.1,{size:fs,w:800,col:o.mcol||'#ff3d6e'})}
   /* adhesius: estrella amb número, cor, raig */
   g.save();g.translate(x+w*.82,y+h*.33);g.rotate(Math.sin(t*2)*.08);g.fillStyle='#ffd23f';star(g,0,0,w*.12,w*.085,12,0);g.fill();txt(g,'Nº1',0,2,{size:w*.06,w:800});g.restore();
   ICON.heart(g,x+w*.14,y+h*.6,w*.13,'#ff5f8f');ICON.star(g,x+w*.17,y+h*.74,w*.11,'#ffffff');
