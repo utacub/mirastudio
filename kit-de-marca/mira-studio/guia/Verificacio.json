@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-28",
+  "device_installation_test": false,
+  "logos": [
+    {
+      "file": "Mira_Studio_blanc_fons_fosc.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "Mira_Studio_negre_transparent.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Mira_Studio_color_transparent.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Mira_Studio_color_ivori.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "file": "icon-maskable-1024.png",
+      "size": 1024,
+      "opaque": true,
+      "essential_radius_fraction": 0.3377
+    },
+    {
+      "file": "apple-touch-icon-180.png",
+      "size": 180,
+      "opaque": true
+    },
+    {
+      "file": "icon-192.png",
+      "size": 192,
+      "opaque": true
+    },
+    {
+      "file": "apple-touch-icon-152.png",
+      "size": 152,
+      "opaque": true
+    },
+    {
+      "file": "icon-maskable-192.png",
+      "size": 192,
+      "opaque": true,
+      "essential_radius_fraction": 0.3345
+    },
+    {
+      "file": "favicon-32.png",
+      "size": 32,
+      "opaque": true
+    },
+    {
+      "file": "icon-maskable-512.png",
+      "size": 512,
+      "opaque": true,
+      "essential_radius_fraction": 0.337
+    },
+    {
+      "file": "favicon-48.png",
+      "size": 48,
+      "opaque": true
+    },
+    {
+      "file": "icon-512.png",
+      "size": 512,
+      "opaque": true
+    },
+    {
+      "file": "apple-touch-icon.png",
+      "size": 180,
+      "opaque": true
+    },
+    {
+      "file": "icon-1024.png",
+      "size": 1024,
+      "opaque": true
+    },
+    {
+      "file": "icon-44.png",
+      "size": 44,
+      "opaque": true
+    },
+    {
+      "file": "apple-touch-icon-167.png",
+      "size": 167,
+      "opaque": true
+    },
+    {
+      "file": "icon-150.png",
+      "size": 150,
+      "opaque": true
+    },
+    {
+      "file": "favicon-16.png",
+      "size": 16,
+      "opaque": true
+    }
+  ],
+  "manifest_paths_valid": true,
+  "reference_unchanged": true
+}
