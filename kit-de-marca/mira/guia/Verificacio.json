@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-28",
+  "logos": [
+    {
+      "file": "Mira_original_aprovat.png",
+      "dimensions": [
+        1317,
+        693
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "Mira_color_transparent.png",
+      "dimensions": [
+        1729,
+        910
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Mira_negre_transparent.png",
+      "dimensions": [
+        1729,
+        910
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Mira_color_text_blanc_fons_fosc.png",
+      "dimensions": [
+        1729,
+        910
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "Mira_monocrom_blanc_fons_fosc.png",
+      "dimensions": [
+        1727,
+        910
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "reference_unchanged": true
+}
