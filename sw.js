@@ -1,6 +1,6 @@
 // Mira (UTAC): funcionament fora de línia. Serveix la còpia desada a l'instant i l'actualitza en segon pla.
-const APP='mirastudio',V=APP+'-bed26ec89c';
-const CORE=["./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png", "./icons/icon-maskable-192.png", "./icons/icon-maskable-512.png", "./icons/favicon-32.png"];
+const APP='mirastudio',V=APP+'-a0df48fa47';
+const CORE=["./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith(APP+'-')&&k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==location.origin)return;
